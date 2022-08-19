@@ -7,32 +7,70 @@
     android:id="@+id/drawer_layout"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/buttonShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="하단이미지"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TeamUzoo"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
+<!--        <me.tankery.lib.circularseekbar.CircularSeekBar-->
+<!--            android:id="@+id/progress_circular"-->
+<!--            android:layout_width="240dp"-->
+<!--            android:layout_height="240dp"-->
+<!--            android:layout_marginStart="85dp"-->
+<!--            android:layout_marginTop="204dp"-->
+<!--            android:layout_marginEnd="86dp"-->
 
+<!--            app:cs_circle_color="@color/purple_200"-->
+<!--            app:cs_circle_progress_color="@color/purple_700"-->
+<!--            app:cs_circle_stroke_width="12dp"-->
+<!--            app:cs_circle_style="round"-->
+<!--            app:cs_circle_x_radius="0dp"-->
+<!--            app:cs_circle_y_radius="0dp"-->
+<!--            app:cs_disable_pointer="false"-->
+<!--            app:cs_disable_progress_glow="true"-->
+<!--            app:cs_end_angle="0"-->
+<!--            app:cs_hide_progress_when_empty="true"-->
+<!--            app:cs_lock_enabled="true"-->
+<!--            app:cs_maintain_equal_circle="true"-->
+<!--            app:cs_max="100"-->
+<!--            app:cs_move_outside_circle="true"-->
+<!--            app:cs_negative_enabled="false"-->
+<!--            app:cs_pointer_alpha_ontouch="5"-->
+<!--            app:cs_pointer_angle="0"-->
+<!--            app:cs_pointer_color="@color/purple_200"-->
+<!--            app:cs_pointer_halo_color="@color/purple_500"-->
+<!--            app:cs_pointer_halo_color_ontouch="@color/purple_200"-->
+<!--            app:cs_pointer_stroke_width="20dp"-->
+<!--            app:cs_progress="70"-->
+<!--            app:cs_start_angle="30"-->
+<!--            app:cs_use_custom_radii="false"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
         android:id="@+id/navigationView"
-        app:headerLayout="@layout/header_menu"
-        app:menu="@menu/main_menu"
-        android:fitsSystemWindows="true"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
         android:layout_gravity="start"
-        >
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/main_menu">
 
 
     </com.google.android.material.navigation.NavigationView>
