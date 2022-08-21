@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -29,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
     Toolbar toolbar;
     ActionBarDrawerToggle actionBarDrawerToggle;
-    Button buttonShow;
+    ImageView bottomsheetstart;
+
 
 
     @Override
@@ -105,9 +107,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        buttonShow = findViewById(R.id.buttonShow);
-        buttonShow.setOnClickListener(new View.OnClickListener() {
+        bottomsheetstart = findViewById(R.id.bottomsheetStart);
+        bottomsheetstart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(
@@ -129,9 +130,6 @@ public class MainActivity extends AppCompatActivity {
                 bottomSheetDialog.show();
             }
         });
-
-
-
 
     }
 }

@@ -44,4 +44,7 @@ dependencies {
     // Rounded Image View
 
     implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    // 메인 타이머 조절 바
+    implementation 'me.tankery.lib:circularSeekBar:1.4.1'
 }
