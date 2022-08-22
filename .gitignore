@@ -379,3 +379,4 @@ fabric.properties
 # End of https://www.toptal.com/developers/gitignore/api/androidstudio,python,flask
 node_modules
 .vscode/
+config.py
