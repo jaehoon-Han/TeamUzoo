@@ -23,13 +23,14 @@ def check_if_token_is_revoked(jwt_header, jwt_payload):
     return jti in jwt_blacklist
 
 api = Api(app)
-# api
+
 
 # 경로와 리소스(API 코드)를 연결한다.
 api.add_resource(UserRegisterResource, '/users/register')
 api.add_resource(UserLoginResource, '/users/login')
 api.add_resource(UserLogoutResource, '/users/logout')
-api.add_resource(MyAnimals, '/myanimals/')
+api.add_resource(MyAnimals, '/myanimals')
+
 
 
 
