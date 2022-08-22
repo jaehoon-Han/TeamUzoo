@@ -3,6 +3,7 @@ from flask_jwt_extended import JWTManager
 from flask_restful import Api
 from config import Config
 from resources.MyAnimals import MyAnimals
+import numpy as np
 
 
 
@@ -30,6 +31,7 @@ api.add_resource(UserRegisterResource, '/users/register')
 api.add_resource(UserLoginResource, '/users/login')
 api.add_resource(UserLogoutResource, '/users/logout')
 api.add_resource(MyAnimals, '/myanimals')
+
 
 
 
