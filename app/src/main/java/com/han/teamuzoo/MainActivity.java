@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     ActionBarDrawerToggle actionBarDrawerToggle;
     ImageView bottomsheetstart;
+
 
 
 
@@ -74,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_planet:
                         Log.i("MENU_DRAWER_TAG","Planet item is clicked");
                         drawerLayout.closeDrawer(GravityCompat.START);
+                        Intent intent = new Intent(MainActivity.this, myplanetActivity.class);
+                        startActivity(intent);
+
                         break;
 
                     case R.id.nav_follower:
