@@ -4,6 +4,7 @@ from flask_restful import Api
 from config import Config
 from resources.MyAnimals import MyAnimals
 import numpy as np
+import pandas as pd
 
 
 
